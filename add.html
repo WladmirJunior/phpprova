@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUD com PHP</title>
+</head>
+    <body>
+        <form action="src/main.php" method="post">
+            Nome:<br/>
+            <input type="text" name="name" required><br/><br/>
+
+            Descrição:<br/>
+            <input type="text" name="desc" required><br/><br/>
+
+            Preço:<br/>
+            <input type="number" name="price" step="0.1" required><br/><br/>
+
+            Quantidade:<br/>
+            <input type="number" name="count" required>
+            <br/><br/>
+
+            <input type="hidden" value="-1" name="id">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </body>
+</html>
